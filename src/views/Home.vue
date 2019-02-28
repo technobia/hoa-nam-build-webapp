@@ -611,13 +611,13 @@
           <div class="col-sm-9">
             <div class="custom_heading home_quote_txt">
               <div class="call-for-action-text">
-                Looking for a quality constructor for your next project?
+                Liên hệ với chúng tôi
               </div>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="home_quote_btn text-right">
-              <a href="#">GET A QUOTE</a>
+              <a href="#">LIÊN HỆ</a>
             </div>
           </div>
         </div>
@@ -628,7 +628,7 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="mb-3">
-              <div class="section-title">Our Services</div>
+              <div class="section-title">Các dự án đã thi công</div>
               <div class="section-desc">
                 <p>
                   Our projects may be diverse but the results are one and the same—on schedule, on budget, with superior quality and safe. It’s a certainty you can count on.
@@ -870,7 +870,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="mb-3 projects_btn">
-              <p>Lastest Projects </p>
+              <p>Dự án đang thi công</p>
               <div class="navigationbutton button-left projects_btn_left">
                 <i class="fa fa-angle-left"></i>
               </div>
@@ -1064,7 +1064,7 @@
           </div>
           <div class="col-sm-4">
             <div class="mb-3">
-              <div class="section-title">What We Are?</div>
+              <div class="section-title">Về chúng tôi</div>
               <div class="section-desc">
                 <p>
                   Builder wants to be your builder for life. Whether we built your home or not, it’s not too late for you to join our family. ReStructure is managed by a staff with over 30 years of renovation experience and supported by the same
@@ -1072,7 +1072,7 @@
                 </p>
               </div>
               <div class="home_whatweare_btn">
-                <a href="#">READ MORE</a>
+                <a href="#">XEM THÊM</a>
               </div>
             </div>
           </div>
@@ -1082,14 +1082,14 @@
                 <img src="images/image_360x146.jpg" alt="" width="370" height="150" />
                 <div class="info">
                   <div>
-                    <h4>Get Your</h4>
-                    <h5>Free consulting</h5>
-                    <a href="#">CLICK HERE! </a>
+                    <h4>TỨ VẤN</h4>
+                    <h5>MIỄN PHÍ</h5>
+                    <a href="#">BẤM VÀO ĐÂY! </a>
                   </div>
                 </div>
               </div>
               <div class="mt-2">
-                If you are confusing? Do not worry. We offer free consultation to help you make a decision with the best creativity and quality that you deserve.
+                Bạn muốn xây nhà? Bạn đang lo lắng về chi phí tư vấn, chi phí vật liệu? Liên hệ với chúng tôi để được tư vấn miễn phí. Chúng tôi cam kết cung cấp giải pháp và chất lượng tốt nhất.
               </div>
             </div>
           </div>
@@ -1101,187 +1101,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="parallax-text">
-              Our promise as a contractor is to build community value into every project while delivering professional expertise, exceptional customers service and quality construction.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section home_news pt-5 pb-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="mb-3">
-              <div class="section-title">Recent News</div>
-              <div class="section-desc">
-                <p>
-                  We provide the latest information about building from around the world. Don’t miss it!
-                </p>
-              </div>
-              <div class="home_news_btn">
-                <a href="#">Read all news</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-9">
-            <div class="myportfolio-container minimal-light mb-3">
-              <div class="row">
-                <div class="slider-wrapper">
-                  <ul class="news-list">
-                    <li class="col-md-4 col-sm-6">
-                      <div class="news-entry-media">
-                        <img src="images/blog/blog_263x175.jpg" alt="" />
-                        <div class="news-entry-cover">
-                          <div class="news-overlay home-blog-container"></div>
-                          <div class="home-blog-popup">
-                            <a data-rel="prettyPhoto" href="images/blog/blog_770x515.jpg">
-                              <i class="fa fa-search"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="home-blog-content">
-                        <div class="home-blog-title">
-                          <a href="blog-detail.html">
-                            House Review: Starter Homes
-                          </a>
-                        </div>
-                        <div class="home-blog-date">July 31, 2015</div>
-                        <div class="home-blog-comment">2</div>
-                        <div class="home-blog-desc">
-                          The startling fact that a growing percentage of the population simply cannot afford a...
-                        </div>
-                        <div class="home-blog-readmore">
-                          <a href="blog-detail.html">
-                            Read More
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="col-md-4 col-sm-6">
-                      <div class="news-entry-media">
-                        <img src="images/blog/blog_263x175.jpg" alt="" />
-                        <div class="news-entry-cover">
-                          <div class="news-overlay home-blog-container"></div>
-                          <div class="home-blog-popup">
-                            <a data-rel="prettyPhoto" href="images/blog/blog_770x515.jpg">
-                              <i class="fa fa-search"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="home-blog-content">
-                        <div class="home-blog-title">
-                          <a href="blog-detail.html">
-                            9 Reasons To Go Modular
-                          </a>
-                        </div>
-                        <div class="home-blog-date">July 31, 2015</div>
-                        <div class="home-blog-comment">2</div>
-                        <div class="home-blog-desc">
-                          With today's technology, modular homes can be built in any style, and completion time...
-                        </div>
-                        <div class="home-blog-readmore">
-                          <a href="blog-detail.html">
-                            Read More
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="col-md-4 col-sm-6">
-                      <div class="news-entry-media">
-                        <img src="images/blog/blog_263x175.jpg" alt="" />
-                        <div class="news-entry-cover">
-                          <div class="news-overlay home-blog-container"></div>
-                          <div class="home-blog-popup">
-                            <a data-rel="prettyPhoto" href="images/blog/blog_770x515.jpg">
-                              <i class="fa fa-search"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="home-blog-content">
-                        <div class="home-blog-title">
-                          <a href="blog-detail.html">
-                            The Brands Builders Buy Most
-                          </a>
-                        </div>
-                        <div class="home-blog-date">July 31, 2015</div>
-                        <div class="home-blog-comment">2</div>
-                        <div class="home-blog-desc">
-                          For decades, Home Innovation Research Labs has been polling builders nationwide about...
-                        </div>
-                        <div class="home-blog-readmore">
-                          <a href="blog-detail.html">
-                            Read More
-                          </a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section pt-5 pb-5 bg-gray testimonials">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="section-title">Testimonials</div>
-            <div class="testimonials_wrapper row">
-              <div class="testimonials-list">
-                <div class="quote col-md-6 col-sm-6">
-                  <blockquote class="testimonials-text">
-                    <p>
-                      “Builder has an exceptional track record building on the Sacramento State campus, and we were confident in their ability to work collaboratively to ensure that a project of this magnitude was delivered successfully.”
-                    </p>
-                  </blockquote>
-                  <img width="90" height="90" src="images/avatar/avatar_100x100.jpg" class="avatar" alt="" />
-                  <cite class="author">
-                    <span>Ms. Anna Terry</span>
-                    <span class="title">Founder/ CEO of Bulder Ltd.,</span>
-                  </cite>
-                </div>
-                <div class="quote col-md-6 col-sm-6">
-                  <blockquote class="testimonials-text">
-                    <p>
-                      “We have assembled a project team comprised of the nation’s top laboratory design and building professionals and are delighted to have Builder execute our vision for this unprecendented facility.”
-                    </p>
-                  </blockquote>
-                  <img width="90" height="90" src="images/avatar/avatar_100x100.jpg" class="avatar" alt="" />
-                  <cite class="author">
-                    <span>Mr. Frankie Kao</span>
-                    <span class="title">Founder/ CEO of ThemeMove</span>
-                  </cite>
-                </div>
-                <div class="quote col-md-6 col-sm-6">
-                  <blockquote class="testimonials-text">
-                    <p>
-                      “Builder has an exceptional track record building on the Sacramento State campus, and we were confident in their ability to work collaboratively to ensure that a project of this magnitude was delivered successfully.”
-                    </p>
-                  </blockquote>
-                  <img width="90" height="90" src="images/avatar/avatar_100x100.jpg" class="avatar" alt="" />
-                  <cite class="author">
-                    <span>Ms. Anna Terry</span>
-                    <span class="title">Founder/ CEO of Bulder Ltd.,</span>
-                  </cite>
-                </div>
-                <div class="quote col-md-6 col-sm-6">
-                  <blockquote class="testimonials-text">
-                    <p>
-                      “We have assembled a project team comprised of the nation’s top laboratory design and building professionals and are delighted to have Builder execute our vision for this unprecendented facility.”
-                    </p>
-                  </blockquote>
-                  <img width="90" height="90" src="images/avatar/avatar_100x100.jpg" class="avatar" alt="" />
-                  <cite class="author">
-                    <span>Mr. Frankie Kao</span>
-                    <span class="title">Founder/ CEO of ThemeMove</span>
-                  </cite>
-                </div>
-              </div>
+              Bạn muốn xây nhà? Bạn đang lo lắng về chi phí tư vấn, chi phí vật liệu? Liên hệ với chúng tôi để được tư vấn miễn phí. Chúng tôi cam kết cung cấp giải pháp và chất lượng tốt nhất.
             </div>
           </div>
         </div>
@@ -1292,7 +1112,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="clients_btn">
-              <div class="section-title">Clients</div>
+              <div class="section-title">Đối tác</div>
               <div class="navigationbutton button-left clients_btn_left">
                 <i class="fa fa-angle-left"></i>
               </div>

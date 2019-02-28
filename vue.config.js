@@ -1,5 +1,4 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/hoa-nam-build-webapp/'
-    : '/'
+  publicPath: '.',
+  outputDir: 'docs'
 }
