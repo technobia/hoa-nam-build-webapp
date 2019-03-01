@@ -220,37 +220,35 @@
 export default {
   name: 'Projects',
   mounted () {
-    if ($('.portfolioContainer').length > 0) {
+    if ($('#da-thumbs').length > 0) {
       projectsInit()
     }
   }
 }
 
 function projectsInit () {
-  $('.portfolioContainer').each(function () {
+  $('#da-thumbs').each(function () {
     let el = $(this)
-    let portfolioContainer = el
+    let daThumbs = el
     let filters = $('.filter-wrapper')
     filters.on('click', 'a', function () {
       let selector = $(this).attr('data-filter')
       $('.filter-wrapper').find('.filterbutton').removeClass('selected')
       $('.current', filters).removeClass('current')
       $(this).addClass('current')
-      portfolioContainer.isotope({
+      daThumbs.isotope({
         filter: selector
       })
       return false
     })
 
-    $(window).on('resize', function () {
-      portfolioContainer.imagesLoaded(function () {
-        portfolioContainer.isotope({
-          layoutMode: 'masonry',
-          itemSelector: '.grid-item',
-          transitionDuration: '0.5s'
-        })
+    daThumbs.imagesLoaded(function () {
+      daThumbs.isotope({
+        layoutMode: 'masonry',
+        itemSelector: '.grid-item',
+        transitionDuration: '0.5s'
       })
-    }).resize()
+    })
 
     filters.find('.current').trigger('click')
   })

@@ -14,20 +14,7 @@
             </div>
             <div class="col-md-9 hidden-xs hidden-sm nav-left">
               <div class="primary-menu">
-                <ul class="menu">
-                  <li :class="{ 'current-menu-item': getActiveLink('/') }">
-                    <router-link to="/">Trang chủ</router-link>
-                  </li>
-                  <li :class="{ 'current-menu-item': getActiveLink('/about-us') }">
-                    <router-link to="/about-us">Giới thiệu</router-link>
-                  </li>
-                  <li :class="{ 'current-menu-item': getActiveLink('/projects') }">
-                    <router-link to="/projects">Dự án</router-link>
-                  </li>
-                  <li :class="{ 'current-menu-item': getActiveLink('/contact-us') }">
-                    <router-link to="/contact-us">Liên hệ</router-link>
-                  </li>
-                </ul>
+                <menu-component></menu-component>
               </div>
             </div>
           </div>
@@ -42,10 +29,8 @@
 /* eslint-disable */
 export default {
   name: 'AppHeader',
-  methods: {
-    getActiveLink (url) {
-      return this.$route.fullPath === url
-    }
+  components: {
+    menuComponent: () => import('./Menu')
   },
   mounted () {
     initScript()
