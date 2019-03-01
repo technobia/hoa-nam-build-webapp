@@ -1229,6 +1229,9 @@
 <script>
 export default {
   name: 'Home',
+  metaInfo: {
+    title: 'Trang chủ'
+  },
   mounted () {
     if ($('#rev_slider_1').length > 0) {
       RevSlider1_Init()

@@ -177,6 +177,9 @@
 <script>
 export default {
   name: 'AboutUs',
+  metaInfo: {
+    title: 'Giới thiệu'
+  },
   mounted () {
     if ($('.project-slider').length > 0) {
       projectSliderInit()

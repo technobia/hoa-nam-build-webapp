@@ -219,6 +219,7 @@
 <script>
 export default {
   name: 'Projects',
+  metaInfo: { title: 'Dự án' },
   mounted () {
     if ($('#da-thumbs').length > 0) {
       projectsInit()

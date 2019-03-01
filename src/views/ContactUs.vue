@@ -48,6 +48,7 @@
 
 <script>
 export default {
-  name: 'ContactUs'
+  name: 'ContactUs',
+  metaInfo: { title: 'Liên hệ' }
 }
 </script>
