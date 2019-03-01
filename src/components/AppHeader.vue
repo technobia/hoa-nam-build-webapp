@@ -15,16 +15,16 @@
             <div class="col-md-9 hidden-xs hidden-sm nav-left">
               <div class="primary-menu">
                 <ul class="menu">
-                  <li class="current-menu-item">
-                    <a href="./">Trang chủ</a>
+                  <li :class="{ 'current-menu-item': getActiveLink('/') }">
+                    <router-link to="/">Trang chủ</router-link>
                   </li>
-                  <li>
-                    <a href="#">Giới thiệu</a>
+                  <li :class="{ 'current-menu-item': getActiveLink('/about-us') }">
+                    <router-link to="/about-us">Giới thiệu</router-link>
                   </li>
-                  <li>
-                    <a href="#">Dự án</a>
+                  <li :class="{ 'current-menu-item': getActiveLink('/projects') }">
+                    <router-link to="/projects">Dự án</router-link>
                   </li>
-                  <li>
+                  <li :class="{ 'current-menu-item': getActiveLink('/contact-us') }">
                     <a href="#">Liên hệ</a>
                   </li>
                 </ul>
@@ -37,3 +37,31 @@
     <!-- #site-navigation -->
   </header>
 </template>
+
+<script>
+/* eslint-disable */
+export default {
+  name: 'AppHeader',
+  methods: {
+    getActiveLink (url) {
+      return this.$route.fullPath === url
+    }
+  },
+  mounted () {
+    initScript()
+  }
+}
+
+function initScript () {
+  const snapper = new Snap({
+    element: document.getElementById('page'),
+    dragger: document.getElementsByClassName('page'),
+    disable: 'right',
+    slideIntent: 10
+  })
+
+  $('#open-left').on('click', function () {
+    snapper.open('left')
+  })
+}
+</script>

@@ -21,8 +21,6 @@
 </template>
 
 <script>
-import { injectScriptUrl } from '@/helpers/utils'
-
 export default {
   name: 'App',
   data () {
@@ -37,7 +35,18 @@ export default {
     appFooter: () => import('@/components/AppFooter')
   },
   mounted () {
-    injectScriptUrl('js/script.js')
+    preLoading()
   }
+}
+
+function preLoading () {
+  if (!window || !$) {
+    console.log('reloading...')
+    setTimeout(preLoading, 500)
+  }
+  $(window).load(function () {
+    'use strict'
+    $('#loading').fadeOut(300)
+  })
 }
 </script>
