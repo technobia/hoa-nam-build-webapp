@@ -25,7 +25,7 @@
                     <router-link to="/projects">Dự án</router-link>
                   </li>
                   <li :class="{ 'current-menu-item': getActiveLink('/contact-us') }">
-                    <a href="#">Liên hệ</a>
+                    <router-link to="/contact-us">Liên hệ</router-link>
                   </li>
                 </ul>
               </div>
