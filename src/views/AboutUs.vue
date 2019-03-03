@@ -20,12 +20,10 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="our_services_heading3 mb-2">
-              <div>Awards</div>
+              <div>{{data.about_us_heading}}</div>
             </div>
             <div class="mb-2">
-              <p>
-                We have receive a lot of awards from 2011 to 2015. Recently we get Number One Green Builder in the country, Engineering News-Record, The Green Sourcebook.
-              </p>
+              <p>{{data.about_us_part_1}}</p>
             </div>
             <div class="mb-3">
               <div class="single-project">
@@ -43,9 +41,7 @@
               </div>
             </div>
             <div class="mb-5">
-              <p>
-                Recognizing excellence, quality and innovation in building, the receipt of an award in this prestigious competition is a goal every professional builder aspires to.
-              </p>
+              <p>{{data.about_us_part_2}}</p>
             </div>
           </div>
         </div>
@@ -58,7 +54,12 @@
 export default {
   name: 'AboutUs',
   metaInfo: {
-    title: 'Giới thiệu'
+    title: 'Xây dựng Hoà Nam - Giới thiệu'
+  },
+  computed: {
+    data () {
+      return this.$store.state.home
+    }
   },
   mounted () {
     if ($('.project-slider').length > 0) {

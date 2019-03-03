@@ -1223,7 +1223,7 @@ import { injectScriptUrl } from '@/helpers/utils'
 export default {
   name: 'Home',
   metaInfo: {
-    title: 'Trang chủ'
+    title: 'Xây dựng Hoà Nam - Trang chủ'
   },
   computed: {
     data () {

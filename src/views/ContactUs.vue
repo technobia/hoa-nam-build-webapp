@@ -6,8 +6,8 @@
         <div class="breadcrumb">
           <div class="container">
             <ul class="tm_bread_crumb">
-              <li class="top"><a href="./">Home</a></li>
-              <li class="sub tail current">Contact</li>
+              <li class="top"><router-link to="/">Trang chủ</router-link></li>
+              <li class="sub tail current">Liên hệ</li>
             </ul>
           </div>
         </div>
@@ -28,16 +28,12 @@
           </div>
           <div class="col-sm-4">
             <div class="mb-2">
-              <h1>
-                We always looking for new collaborations, talents and partners
-              </h1>
+              <h1>{{data.contact_us_heading}}</h1>
             </div>
             <div class="contact-info">
-              <p><i class="fa fa-map-marker"></i>14 Tottenham Road, London, England.</p>
-              <p><i class="fa fa-phone"></i> (102) 6666 8888</p>
-              <p><i class="fa fa-envelope"></i> info@zooka.io</p>
-              <p><i class="fa fa-fax"></i> (102) 8888 9999</p>
-              <p><i class="fa fa-clock-o"></i> Mon – Sat: 9:00 – 18:00</p>
+              <p><i class="fa fa-map-marker"></i>{{data.contact_us_address}}</p>
+              <p><i class="fa fa-phone"></i> {{data.contact_us_phone}}</p>
+              <p><i class="fa fa-envelope"></i> {{data.contact_us_email}}</p>
             </div>
           </div>
         </div>
@@ -49,6 +45,11 @@
 <script>
 export default {
   name: 'ContactUs',
-  metaInfo: { title: 'Liên hệ' }
+  metaInfo: { title: 'Xây dựng Hoà Nam - Liên hệ' },
+  computed: {
+    data () {
+      return this.$store.state.home
+    }
+  }
 }
 </script>

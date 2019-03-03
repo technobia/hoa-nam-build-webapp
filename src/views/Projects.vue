@@ -2,12 +2,12 @@
   <div class="site-content">
     <div class="big-title">
       <div class="container">
-        <h1 class="entry-title">Projects 3 Columns</h1>
+        <h1 class="entry-title">Dự án</h1>
         <div class="breadcrumb">
           <div class="container">
             <ul class="tm_bread_crumb">
-              <li class="top"><a href="./">Home</a></li>
-              <li class="sub tail current">Projects 3 Columns</li>
+              <li class="top"><router-link to="/">Trang chủ</router-link></li>
+              <li class="sub tail current">Dự án</li>
             </ul>
           </div>
         </div>
@@ -221,7 +221,7 @@ import { injectScriptUrl } from '@/helpers/utils'
 
 export default {
   name: 'Projects',
-  metaInfo: { title: 'Dự án' },
+  metaInfo: { title: 'Xây dựng Hoà Nam - Dự án' },
   mounted () {
     if ($('#da-thumbs').length > 0) {
       projectsInit()
