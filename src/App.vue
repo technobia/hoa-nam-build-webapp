@@ -36,17 +36,15 @@ export default {
   },
   mounted () {
     preLoading()
+    this.$store.dispatch('getHome')
   }
 }
 
 function preLoading () {
-  if (!window || !$) {
+  if (!$('#loading').length) {
     console.log('reloading...')
     setTimeout(preLoading, 500)
   }
-  $(window).load(function () {
-    'use strict'
-    $('#loading').fadeOut(300)
-  })
+  $('#loading').fadeOut(300)
 }
 </script>

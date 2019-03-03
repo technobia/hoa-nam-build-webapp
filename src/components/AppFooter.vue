@@ -7,7 +7,7 @@
             <a href="./" class="footer-logo">
               <img src="images/footer_logo.png" alt="Footer Logo" />
             </a>
-            Integrity for what we build, the purpose of why we build and the people who inspire us to build. It’s what Builder is built upon, and why our homes are as far from ordinary as the people who live in them.
+            {{data.footer_about_us}}
           </div>
           <div class="social">
             <div class="social-menu">
@@ -35,8 +35,6 @@
               <p><i class="fa fa-map-marker"></i>14 Tottenham Road, London, England.</p>
               <p><i class="fa fa-phone"></i>(102) 6666 8888</p>
               <p><i class="fa fa-envelope"></i><a href="mailto:email@domain.com">email@domain.com</a></p>
-              <p><i class="fa fa-fax"></i>(102) 8888 9999</p>
-              <p><i class="fa fa-clock-o"></i>Mon - Sat: 9:00 - 18:00</p>
             </div>
           </div>
         </div>
@@ -44,6 +42,17 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  name: 'AppFooter',
+  computed: {
+    data () {
+      return this.$store.state.home
+    }
+  }
+}
+</script>
 
 <style scoped>
   .site-footer .office-block .fa {

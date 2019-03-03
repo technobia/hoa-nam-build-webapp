@@ -217,6 +217,8 @@
 </template>
 
 <script>
+import { injectScriptUrl } from '@/helpers/utils'
+
 export default {
   name: 'Projects',
   metaInfo: { title: 'Dự án' },
@@ -224,6 +226,13 @@ export default {
     if ($('#da-thumbs').length > 0) {
       projectsInit()
     }
+
+    injectScriptUrl('js/jquery.prettyPhoto.js', 'jquery.prettyPhoto.js')
+    injectScriptUrl('js/jquery.prettyPhoto.init.min.js', 'jquery.prettyPhoto.init.min.js')
+  },
+  destroyed () {
+    document.getElementById('jquery.prettyPhoto.js').remove()
+    document.getElementById('jquery.prettyPhoto.init.min.js').remove()
   }
 }
 

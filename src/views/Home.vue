@@ -611,13 +611,13 @@
           <div class="col-sm-9">
             <div class="custom_heading home_quote_txt">
               <div class="call-for-action-text">
-                Liên hệ với chúng tôi
+                {{data.call_for_action_text}}
               </div>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="home_quote_btn text-right">
-              <a href="#">LIÊN HỆ</a>
+              <router-link to="/contact-us">{{data.call_for_action_button}}</router-link>
             </div>
           </div>
         </div>
@@ -628,11 +628,9 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="mb-3">
-              <div class="section-title">Các dự án đã thi công</div>
+              <div class="section-title">{{data.our_services_text}}</div>
               <div class="section-desc">
-                <p>
-                  Our projects may be diverse but the results are one and the same—on schedule, on budget, with superior quality and safe. It’s a certainty you can count on.
-                </p>
+                <p>{{data.our_services_info}}</p>
               </div>
               <div class="ourservices_btn">
                 <div class="navigationbutton button-left ourservices_btn_left">
@@ -870,7 +868,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="mb-3 projects_btn">
-              <p>Dự án đang thi công</p>
+              <p>{{data.home_latest_projects}}</p>
               <div class="navigationbutton button-left projects_btn_left">
                 <i class="fa fa-angle-left"></i>
               </div>
@@ -1064,15 +1062,12 @@
           </div>
           <div class="col-sm-4">
             <div class="mb-3">
-              <div class="section-title">Về chúng tôi</div>
+              <div class="section-title">{{data.about_us_title}}</div>
               <div class="section-desc">
-                <p>
-                  Builder wants to be your builder for life. Whether we built your home or not, it’s not too late for you to join our family. ReStructure is managed by a staff with over 30 years of renovation experience and supported by the same
-                  systems.
-                </p>
+                <p>{{data.about_us_readmore_info}}</p>
               </div>
               <div class="home_whatweare_btn">
-                <a href="#">XEM THÊM</a>
+                <router-link to="/about-us">{{data.about_us_readmore_button}}</router-link>
               </div>
             </div>
           </div>
@@ -1088,9 +1083,7 @@
                   </div>
                 </div>
               </div>
-              <div class="mt-2">
-                Bạn muốn xây nhà? Bạn đang lo lắng về chi phí tư vấn, chi phí vật liệu? Liên hệ với chúng tôi để được tư vấn miễn phí. Chúng tôi cam kết cung cấp giải pháp và chất lượng tốt nhất.
-              </div>
+              <div class="mt-2">{{data.about_us_suggest}}</div>
             </div>
           </div>
         </div>
@@ -1100,9 +1093,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <div class="parallax-text">
-              Bạn muốn xây nhà? Bạn đang lo lắng về chi phí tư vấn, chi phí vật liệu? Liên hệ với chúng tôi để được tư vấn miễn phí. Chúng tôi cam kết cung cấp giải pháp và chất lượng tốt nhất.
-            </div>
+            <div class="parallax-text">{{data.slogan}}</div>
           </div>
         </div>
       </div>
@@ -1227,10 +1218,17 @@
 </template>
 
 <script>
+import { injectScriptUrl } from '@/helpers/utils'
+
 export default {
   name: 'Home',
   metaInfo: {
     title: 'Trang chủ'
+  },
+  computed: {
+    data () {
+      return this.$store.state.home
+    }
   },
   mounted () {
     if ($('#rev_slider_1').length > 0) {
@@ -1248,6 +1246,13 @@ export default {
     if ($('.client-list').length > 0) {
       clientSliderInit()
     }
+
+    injectScriptUrl('js/jquery.prettyPhoto.js', 'jquery.prettyPhoto.js')
+    injectScriptUrl('js/jquery.prettyPhoto.init.min.js', 'jquery.prettyPhoto.init.min.js')
+  },
+  destroyed () {
+    document.getElementById('jquery.prettyPhoto.js').remove()
+    document.getElementById('jquery.prettyPhoto.init.min.js').remove()
   }
 }
 
