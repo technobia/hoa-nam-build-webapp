@@ -221,7 +221,7 @@ import { injectScriptUrl } from '@/helpers/utils'
 
 export default {
   name: 'Projects',
-  metaInfo: { title: 'Xây dựng Hoà Nam - Dự án' },
+  metaInfo: { title: 'Xây Dựng Hoà Nam - Dự án' },
   mounted () {
     if ($('#da-thumbs').length > 0) {
       projectsInit()

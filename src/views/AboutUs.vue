@@ -54,7 +54,7 @@
 export default {
   name: 'AboutUs',
   metaInfo: {
-    title: 'Xây dựng Hoà Nam - Giới thiệu'
+    title: 'Xây Dựng Hoà Nam - Giới thiệu'
   },
   computed: {
     data () {

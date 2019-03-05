@@ -45,7 +45,7 @@
 <script>
 export default {
   name: 'ContactUs',
-  metaInfo: { title: 'Xây dựng Hoà Nam - Liên hệ' },
+  metaInfo: { title: 'Xây Dựng Hoà Nam - Liên hệ' },
   computed: {
     data () {
       return this.$store.state.home
