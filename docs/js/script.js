@@ -1,18 +1,7 @@
 /* --------------------------------------------------------------
  Custom js
  -------------------------------------------------------------- */
-
-const snapper = new Snap({
-  element: document.getElementById('page'),
-  dragger: document.getElementsByClassName('page'),
-  disable: 'right',
-  slideIntent: 10
-})
-
 $(document).ready(function ($) {
-  $('#open-left').on('click', function () {
-    snapper.open('left')
-  })
   // mini-cart
   let $mini_cart = $('.mini-cart')
   $mini_cart.on('click', function (e) {
@@ -31,33 +20,33 @@ $(document).ready(function ($) {
     $('.top-search input').focus()
   })
 
-  $('.portfolioContainer').each(function () {
-    let el = $(this)
-    let portfolioContainer = el
-    let filters = $('.filter-wrapper')
-    filters.on('click', 'a', function () {
-      let selector = $(this).attr('data-filter')
-		  $('.filter-wrapper').find('.filterbutton').removeClass('selected')
-      $('.current', filters).removeClass('current')
-      $(this).addClass('current')
-      portfolioContainer.isotope({
-        filter: selector
-      })
-      return false
-    })
-
-    $(window).on('resize', function () {
-      portfolioContainer.imagesLoaded(function () {
-        portfolioContainer.isotope({
-          layoutMode: 'masonry',
-          itemSelector: '.grid-item',
-          transitionDuration: '0.5s'
-        })
-      })
-    }).resize()
-
-    filters.find('.current').trigger('click')
-  })
+  // $('.portfolioContainer').each(function () {
+  //   let el = $(this)
+  //   let portfolioContainer = el
+  //   let filters = $('.filter-wrapper')
+  //   filters.on('click', 'a', function () {
+  //     let selector = $(this).attr('data-filter')
+  //     $('.filter-wrapper').find('.filterbutton').removeClass('selected')
+  //     $('.current', filters).removeClass('current')
+  //     $(this).addClass('current')
+  //     portfolioContainer.isotope({
+  //       filter: selector
+  //     })
+  //     return false
+  //   })
+  //
+  //   $(window).on('resize', function () {
+  //     portfolioContainer.imagesLoaded(function () {
+  //       portfolioContainer.isotope({
+  //         layoutMode: 'masonry',
+  //         itemSelector: '.grid-item',
+  //         transitionDuration: '0.5s'
+  //       })
+  //     })
+  //   }).resize()
+  //
+  //   filters.find('.current').trigger('click')
+  // })
 
   $('.application_button').on('click', function () {
     $('.single_job_listing .application .application_details').slideDown()
@@ -83,27 +72,27 @@ $(document).ready(function ($) {
   })
 
   // Service Slider
-  $('.service-list').owlCarousel({
-    items: 2,
-    itemsDesktop: [1199, 2],
-    itemsDesktopSmall: [979, 2],
-    itemsTablet: [767, 2],
-    itemsMobile: [480, 1],
-    slideSpeed: 500,
-    paginationSpeed: 1000,
-    rewindSpeed: 1000,
-    autoHeight: true,
-    addClassActive: true,
-    autoPlay: false,
-    loop: true,
-    pagination: false
-  })
-  $('.ourservices_btn_left').on('click', function () {
-    $('.service-list').trigger('owl.prev')
-  })
-  $('.ourservices_btn_right').on('click', function () {
-    $('.service-list').trigger('owl.next')
-  })
+  // $('.service-list').owlCarousel({
+  //   items: 2,
+  //   itemsDesktop: [1199, 2],
+  //   itemsDesktopSmall: [979, 2],
+  //   itemsTablet: [767, 2],
+  //   itemsMobile: [480, 1],
+  //   slideSpeed: 500,
+  //   paginationSpeed: 1000,
+  //   rewindSpeed: 1000,
+  //   autoHeight: true,
+  //   addClassActive: true,
+  //   autoPlay: false,
+  //   loop: true,
+  //   pagination: false
+  // })
+  // $('.ourservices_btn_left').on('click', function () {
+  //   $('.service-list').trigger('owl.prev')
+  // })
+  // $('.ourservices_btn_right').on('click', function () {
+  //   $('.service-list').trigger('owl.next')
+  // })
 
   $('.service-list-2').owlCarousel({
     items: 3,
@@ -128,27 +117,27 @@ $(document).ready(function ($) {
   })
 
   // Project Slider
-  $('.project-list').owlCarousel({
-    items: 4,
-    itemsDesktop: [1199, 4],
-    itemsDesktopSmall: [979, 3],
-    itemsTablet: [767, 1],
-    itemsMobile: [480, 1],
-    slideSpeed: 500,
-    paginationSpeed: 1000,
-    rewindSpeed: 1000,
-    autoHeight: false,
-    addClassActive: true,
-    autoPlay: false,
-    loop: true,
-    pagination: false
-  })
-  $('.projects_btn_left').on('click', function () {
-    $('.project-list').trigger('owl.prev')
-  })
-  $('.projects_btn_right').on('click', function () {
-    $('.project-list').trigger('owl.next')
-  })
+  // $('.project-list').owlCarousel({
+  //   items: 4,
+  //   itemsDesktop: [1199, 4],
+  //   itemsDesktopSmall: [979, 3],
+  //   itemsTablet: [767, 1],
+  //   itemsMobile: [480, 1],
+  //   slideSpeed: 500,
+  //   paginationSpeed: 1000,
+  //   rewindSpeed: 1000,
+  //   autoHeight: false,
+  //   addClassActive: true,
+  //   autoPlay: false,
+  //   loop: true,
+  //   pagination: false
+  // })
+  // $('.projects_btn_left').on('click', function () {
+  //   $('.project-list').trigger('owl.prev')
+  // })
+  // $('.projects_btn_right').on('click', function () {
+  //   $('.project-list').trigger('owl.next')
+  // })
 
   // Blog Slider
   $('.news-list').owlCarousel({
@@ -333,30 +322,19 @@ $(document).ready(function ($) {
     }
   }
 
-  if ($('#rev_slider_1').length > 0) {
-    RevSlider1_Init()
-  }
-  if ($('#rev_slider_2').length > 0) {
-    RevSlider2_Init()
-  }
-  if ($('#rev_slider_3').length > 0) {
-    RevSlider3_Init()
-  }
-  if ($('#rev_slider_4').length > 0) {
-    RevSlider4_Init()
-  }
+  // if ($('#rev_slider_1').length > 0) {
+  //   RevSlider1_Init()
+  // }
+  // if ($('#rev_slider_2').length > 0) {
+  //   RevSlider2_Init()
+  // }
+  // if ($('#rev_slider_3').length > 0) {
+  //   RevSlider3_Init()
+  // }
+  // if ($('#rev_slider_4').length > 0) {
+  //   RevSlider4_Init()
+  // }
 });
-
-(function preloading () {
-  if (!window || !$) {
-    console.log('reloading...')
-    setTimeout(preloading, 500)
-  }
-  $(window).load(function () {
-    'use strict'
-    $('#loading').fadeOut(300)
-  })
-})()
 
 function RevSlider1_Init () {
   $('#rev_slider_1').show().revolution({
