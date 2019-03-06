@@ -6,7 +6,7 @@
           <ul>
             <li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
               <!-- MAIN IMAGE -->
-              <img src="images/banner/banner_1920x550.jpg" alt=""
+              <img :src="`${publicPath}images/banner/banner_1920x550.jpg`" alt=""
                    data-bgposition="center top"
                    data-kenburns="on"
                    data-duration="9000"
@@ -33,7 +33,7 @@
                    data-transform_in="x:right;s:250;e:Power3.easeInOut;"
                    data-transform_out="x:left;s:300;s:300;"
                    data-start="800"
-                   data-responsive_offset="on"><img src="images/banner/line_01.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_01.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -49,7 +49,7 @@
                    data-transform_in="x:left;s:250;e:Power3.easeInOut;"
                    data-transform_out="x:right;s:300;s:300;"
                    data-start="1000"
-                   data-responsive_offset="on"><img src="images/banner/line_01.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_01.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -65,7 +65,7 @@
                    data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
                    data-transform_out="y:top;s:300;s:300;"
                    data-start="1200"
-                   data-responsive_offset="on"><img src="images/banner/line_02.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_02.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -81,7 +81,7 @@
                    data-transform_in="y:top;s:250;e:Power3.easeInOut;"
                    data-transform_out="y:bottom;s:300;s:300;"
                    data-start="1400"
-                   data-responsive_offset="on"><img src="images/banner/line_02.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_02.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
@@ -127,7 +127,7 @@
                    data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
                    data-transform_out="opacity:0;s:300;s:300;"
                    data-start="2000"
-                   data-responsive_offset="on"><img src="images/banner/line_03.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_03.png`" alt="" />
               </div>
 
               <div class="tp-caption slide-text-2 tp-resizeme"
@@ -207,7 +207,7 @@
 
             <li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="8630" data-rotate="0" data-saveperformance="off"
                 data-title="Slide">
-              <img src="images/banner/banner_1920x550.jpg" alt=""
+              <img :src="`${publicPath}images/banner/banner_1920x550.jpg`" alt=""
                    data-bgposition="center top"
                    data-kenburns="on"
                    data-duration="9000"
@@ -233,7 +233,7 @@
                    data-transform_in="x:right;s:250;e:Power3.easeInOut;"
                    data-transform_out="x:left;s:300;s:300;"
                    data-start="800"
-                   data-responsive_offset="on"><img src="images/banner/line_21.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_21.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -248,7 +248,7 @@
                    data-transform_in="x:left;s:250;e:Power3.easeInOut;"
                    data-transform_out="x:right;s:300;s:300;"
                    data-start="1000"
-                   data-responsive_offset="on"><img src="images/banner/line_21.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_21.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -263,7 +263,7 @@
                    data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
                    data-transform_out="y:top;s:300;s:300;"
                    data-start="1200"
-                   data-responsive_offset="on"><img src="images/banner/line_22.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_22.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -278,7 +278,7 @@
                    data-transform_in="y:top;s:250;e:Power3.easeInOut;"
                    data-transform_out="y:bottom;s:300;s:300;"
                    data-start="1400"
-                   data-responsive_offset="on"><img src="images/banner/line_22.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_22.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-shape tp-shapewrapper bg-dark tp-resizeme"
@@ -325,7 +325,7 @@
                    data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
                    data-transform_out="opacity:0;s:300;s:300;"
                    data-start="2000"
-                   data-responsive_offset="on"><img src="images/banner/line_03.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_03.png`" alt="" />
               </div>
 
               <div class="tp-caption slide-text-2 color-white tp-resizeme"
@@ -404,7 +404,7 @@
             </li>
 
             <li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
-              <img src="images/banner/banner_1920x550.jpg" alt=""
+              <img :src="`${publicPath}images/banner/banner_1920x550.jpg`" alt=""
                    data-bgposition="center top"
                    data-kenburns="on"
                    data-duration="9000"
@@ -431,7 +431,7 @@
                    data-transform_in="x:right;s:250;e:Power3.easeInOut;"
                    data-transform_out="x:left;s:300;s:300;"
                    data-start="800"
-                   data-responsive_offset="on"><img src="images/banner/line_31.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_31.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -446,7 +446,7 @@
                    data-transform_in="x:left;s:250;e:Power3.easeInOut;"
                    data-transform_out="x:right;s:300;s:300;"
                    data-start="1000"
-                   data-responsive_offset="on"><img src="images/banner/line_31.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_31.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -461,7 +461,7 @@
                    data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
                    data-transform_out="y:top;s:300;s:300;"
                    data-start="1200"
-                   data-responsive_offset="on"><img src="images/banner/line_32.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_32.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -476,7 +476,7 @@
                    data-transform_in="y:top;s:250;e:Power3.easeInOut;"
                    data-transform_out="y:bottom;s:300;s:300;"
                    data-start="1400"
-                   data-responsive_offset="on"><img src="images/banner/line_32.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_32.png`" alt="" />
               </div>
 
               <div class="tp-caption tp-shape tp-shapewrapper bg-darker tp-resizeme"
@@ -523,7 +523,7 @@
                    data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
                    data-transform_out="opacity:0;s:300;s:300;"
                    data-start="2000"
-                   data-responsive_offset="on"><img src="images/banner/line_03.png" alt="" />
+                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_03.png`" alt="" />
               </div>
 
               <div class="tp-caption slide-text-2 color-white tp-resizeme"
@@ -649,7 +649,7 @@
                   <li class="col-md-6 col-sm-6">
                     <div class="service-item">
                       <div class="service-entry-media">
-                        <img src="images/services/service_360x195.jpg" alt="" />
+                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
                         <div class="service-entry-cover">
                           <div class="service-overlay our-services-container"></div>
                           <div class="our-services-readmore">
@@ -684,7 +684,7 @@
                   <li class="col-md-6 col-sm-6">
                     <div class="service-item">
                       <div class="service-entry-media">
-                        <img src="images/services/service_360x195.jpg" alt="" />
+                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
                         <div class="service-entry-cover">
                           <div class="service-overlay our-services-container"></div>
                           <div class="our-services-readmore">
@@ -719,7 +719,7 @@
                   <li class="col-md-6 col-sm-6">
                     <div class="service-item">
                       <div class="service-entry-media">
-                        <img src="images/services/service_360x195.jpg" alt="" />
+                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
                         <div class="service-entry-cover">
                           <div class="service-overlay our-services-container"></div>
                           <div class="our-services-readmore">
@@ -754,7 +754,7 @@
                   <li class="col-md-6 col-sm-6">
                     <div class="service-item">
                       <div class="service-entry-media">
-                        <img src="images/services/service_360x195.jpg" alt="" />
+                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
                         <div class="service-entry-cover">
                           <div class="service-overlay our-services-container"></div>
                           <div class="our-services-readmore">
@@ -789,7 +789,7 @@
                   <li class="col-md-6 col-sm-6">
                     <div class="service-item">
                       <div class="service-entry-media">
-                        <img src="images/services/service_360x195.jpg" alt="" />
+                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
                         <div class="service-entry-cover">
                           <div class="service-overlay our-services-container"></div>
                           <div class="our-services-readmore">
@@ -824,7 +824,7 @@
                   <li class="col-md-6 col-sm-6">
                     <div class="service-item">
                       <div class="service-entry-media">
-                        <img src="images/services/service_360x195.jpg" alt="" />
+                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
                         <div class="service-entry-cover">
                           <div class="service-overlay our-services-container"></div>
                           <div class="our-services-readmore">
@@ -883,7 +883,7 @@
                     <li class="our-projects-wrapper col-md-4 col-sm-6">
                       <div class="project-media-cover-wrapper">
                         <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_263x280.jpg" alt="" />
+                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
                         </div>
                         <div class="project-entry-cover">
                           <div class="project-overlay our-projects-container"></div>
@@ -899,7 +899,7 @@
                             </div>
                             <div class="line-clear"></div>
                             <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
+                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
                                 <i class="fa fa-search"></i>
                               </a>
                             </div>
@@ -910,7 +910,7 @@
                     <li class="our-projects-wrapper col-md-4 col-sm-6">
                       <div class="project-media-cover-wrapper">
                         <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_263x280.jpg" alt="" />
+                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
                         </div>
                         <div class="project-entry-cover">
                           <div class="project-overlay our-projects-container"></div>
@@ -926,7 +926,7 @@
                             </div>
                             <div class="line-clear"></div>
                             <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
+                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
                                 <i class="fa fa-search"></i>
                               </a>
                             </div>
@@ -937,7 +937,7 @@
                     <li class="our-projects-wrapper col-md-4 col-sm-6">
                       <div class="project-media-cover-wrapper">
                         <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_263x280.jpg" alt="" />
+                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
                         </div>
                         <div class="project-entry-cover">
                           <div class="project-overlay our-projects-container"></div>
@@ -953,7 +953,7 @@
                             </div>
                             <div class="line-clear"></div>
                             <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
+                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
                                 <i class="fa fa-search"></i>
                               </a>
                             </div>
@@ -964,7 +964,7 @@
                     <li class="our-projects-wrapper col-md-4 col-sm-6">
                       <div class="project-media-cover-wrapper">
                         <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_263x280.jpg" alt="" />
+                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
                         </div>
                         <div class="project-entry-cover">
                           <div class="project-overlay our-projects-container"></div>
@@ -980,7 +980,7 @@
                             </div>
                             <div class="line-clear"></div>
                             <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
+                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
                                 <i class="fa fa-search"></i>
                               </a>
                             </div>
@@ -991,7 +991,7 @@
                     <li class="our-projects-wrapper col-md-4 col-sm-6">
                       <div class="project-media-cover-wrapper">
                         <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_263x280.jpg" alt="" />
+                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
                         </div>
                         <div class="project-entry-cover">
                           <div class="project-overlay our-projects-container"></div>
@@ -1007,7 +1007,7 @@
                             </div>
                             <div class="line-clear"></div>
                             <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
+                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
                                 <i class="fa fa-search"></i>
                               </a>
                             </div>
@@ -1018,7 +1018,7 @@
                     <li class="our-projects-wrapper col-md-4 col-sm-6">
                       <div class="project-media-cover-wrapper">
                         <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_263x280.jpg" alt="" />
+                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
                         </div>
                         <div class="project-entry-cover">
                           <div class="project-overlay our-projects-container"></div>
@@ -1034,7 +1034,7 @@
                             </div>
                             <div class="line-clear"></div>
                             <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
+                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
                                 <i class="fa fa-search"></i>
                               </a>
                             </div>
@@ -1074,7 +1074,7 @@
           <div class="col-sm-4">
             <div class="mb-3">
               <div class="consulting">
-                <img src="images/image_360x146.jpg" alt="" width="370" height="150" />
+                <img :src="`${publicPath}images/image_360x146.jpg`" alt="" width="370" height="150" />
                 <div class="info">
                   <div>
                     <h4>TỨ VẤN</h4>
@@ -1118,7 +1118,7 @@
                     <li class="col-md-2 col-sm-6">
                       <div class="client-media-cover-wrapper">
                         <div class="client-entry-media">
-                          <img src="images/client/client_163x86.jpg" alt="" />
+                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
                         </div>
                         <div class="client-entry-cover">
                           <div class="client-overlay home-clients-container"></div>
@@ -1131,7 +1131,7 @@
                     <li class="col-md-2 col-sm-6">
                       <div class="client-media-cover-wrapper">
                         <div class="client-entry-media">
-                          <img src="images/client/client_163x86.jpg" alt="" />
+                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
                         </div>
                         <div class="client-entry-cover">
                           <div class="client-overlay home-clients-container"></div>
@@ -1144,7 +1144,7 @@
                     <li class="col-md-2 col-sm-6">
                       <div class="client-media-cover-wrapper">
                         <div class="client-entry-media">
-                          <img src="images/client/client_163x86.jpg" alt="" />
+                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
                         </div>
                         <div class="client-entry-cover">
                           <div class="client-overlay home-clients-container"></div>
@@ -1157,7 +1157,7 @@
                     <li class="col-md-2 col-sm-6">
                       <div class="client-media-cover-wrapper">
                         <div class="client-entry-media">
-                          <img src="images/client/client_163x86.jpg" alt="" />
+                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
                         </div>
                         <div class="client-entry-cover">
                           <div class="client-overlay home-clients-container"></div>
@@ -1170,7 +1170,7 @@
                     <li class="col-md-2 col-sm-6">
                       <div class="client-media-cover-wrapper">
                         <div class="client-entry-media">
-                          <img src="images/client/client_163x86.jpg" alt="" />
+                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
                         </div>
                         <div class="client-entry-cover">
                           <div class="client-overlay home-clients-container"></div>
@@ -1183,7 +1183,7 @@
                     <li class="col-md-2 col-sm-6">
                       <div class="client-media-cover-wrapper">
                         <div class="client-entry-media">
-                          <img src="images/client/client_163x86.jpg" alt="" />
+                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
                         </div>
                         <div class="client-entry-cover">
                           <div class="client-overlay home-clients-container"></div>
@@ -1196,7 +1196,7 @@
                     <li class="col-md-2 col-sm-6">
                       <div class="client-media-cover-wrapper">
                         <div class="client-entry-media">
-                          <img src="images/client/client_163x86.jpg" alt="" />
+                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
                         </div>
                         <div class="client-entry-cover">
                           <div class="client-overlay home-clients-container"></div>
@@ -1224,6 +1224,11 @@ export default {
   name: 'Home',
   metaInfo: {
     title: 'Xây Dựng Hoà Nam - Trang chủ'
+  },
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
   },
   computed: {
     data () {
