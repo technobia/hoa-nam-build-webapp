@@ -37,6 +37,7 @@ export default {
   mounted () {
     preLoading()
     this.$store.dispatch('getHome')
+    this.$store.dispatch('getBanner')
   }
 }
 

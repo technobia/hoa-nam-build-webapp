@@ -1,12 +1,24 @@
 <template>
   <div class="site-content">
-    <div class="section">
+    <div class="section" v-if="homeBanners.length">
       <div class="rev_slider_wrapper fullwidthbanner-container">
         <div id="rev_slider_1" class="rev_slider fullwidthabanner">
           <ul>
-            <li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
+            <li data-transition="random"
+                data-slotamount="7"
+                data-hideafterloop="0"
+                data-hideslideonmobile="off"
+                data-easein="default"
+                data-easeout="default"
+                data-masterspeed="300"
+                data-rotate="0"
+                data-saveperformance="off"
+                data-title="Slide"
+                v-for="item in homeBanners"
+                :key="item.id"
+            >
               <!-- MAIN IMAGE -->
-              <img :src="`${publicPath}images/banner/banner_1920x550.jpg`" alt=""
+              <img :src="item.img" alt=""
                    data-bgposition="center top"
                    data-kenburns="on"
                    data-duration="9000"
@@ -112,7 +124,7 @@
                    data-start="2000"
                    data-splitin="none"
                    data-splitout="none"
-                   data-responsive_offset="on">WE BRING YOUR VISION TO LIFE
+                   data-responsive_offset="on">{{item.heading}}
               </div>
 
               <div class="tp-caption tp-resizeme"
@@ -144,461 +156,8 @@
                    data-start="2000"
                    data-splitin="none"
                    data-splitout="none"
-                   data-responsive_offset="on">Kich Out Other Trashy Sites
+                   data-responsive_offset="on">{{item.title}}
               </div>
-
-              <div class="tp-caption slide-text-2 tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['260','10','10','10']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="1990"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">Builder Is Better
-              </div>
-
-              <a class="tp-caption rev-btn tp-resizeme rev-btn-1"
-                 href="#" target="_self"
-                 data-x="['left','center','center','center']"
-                 data-hoffset="['410','-80','-80','-80']"
-                 data-y="['top','middle','middle','middle']"
-                 data-voffset="['338','80','80','80']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-                 data-transform_idle="o:1;"
-                 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-                 data-style_hover="c:rgba(0, 45, 104, 1.00);bg:rgba(255, 255, 255, 1.00);"
-                 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-                 data-transform_out="opacity:0;s:300;s:300;"
-                 data-start="2000"
-                 data-splitin="none"
-                 data-splitout="none"
-                 data-actions=''
-                 data-responsive_offset="on">SEE ALL FEATURES </a>
-
-              <a class="tp-caption rev-btn  tp-resizeme rev-btn-2"
-                 href="#" target="_self"
-                 data-x="['left','center','center','center']"
-                 data-hoffset="['590','80','80','80']"
-                 data-y="['top','middle','middle','middle']"
-                 data-voffset="['338','80','80','80']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-                 data-transform_idle="o:1;"
-                 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-                 data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 45, 104, 1.00);"
-                 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-                 data-transform_out="opacity:0;s:300;s:300;"
-                 data-start="2000"
-                 data-splitin="none"
-                 data-splitout="none"
-                 data-actions=''
-                 data-responsive_offset="on">BUY NOW! </a>
-            </li>
-
-            <li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="8630" data-rotate="0" data-saveperformance="off"
-                data-title="Slide">
-              <img :src="`${publicPath}images/banner/banner_1920x550.jpg`" alt=""
-                   data-bgposition="center top"
-                   data-kenburns="on"
-                   data-duration="9000"
-                   data-ease="Linear.easeNone"
-                   data-scalestart="100"
-                   data-scaleend="110"
-                   data-rotatestart="0"
-                   data-rotateend="0"
-                   data-offsetstart="0 0"
-                   data-offsetend="0 0"
-                   class="rev-slidebg" />
-              <!-- LAYERS -->
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['0','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['135','-130','-130','-128']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="x:right;s:250;e:Power3.easeInOut;"
-                   data-transform_out="x:left;s:300;s:300;"
-                   data-start="800"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_21.png`" alt="" />
-              </div>
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['0','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['414','150','150','128']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="x:left;s:250;e:Power3.easeInOut;"
-                   data-transform_out="x:right;s:300;s:300;"
-                   data-start="1000"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_21.png`" alt="" />
-              </div>
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','left']"
-                   data-hoffset="['375','-250','-250','135']"
-                   data-y="['top','middle','middle','top']"
-                   data-voffset="['0','0','0','0']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
-                   data-transform_out="y:top;s:300;s:300;"
-                   data-start="1200"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_22.png`" alt="" />
-              </div>
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','left']"
-                   data-hoffset="['875','250','250','635']"
-                   data-y="['top','middle','middle','top']"
-                   data-voffset="['0','0','0','0']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="y:top;s:250;e:Power3.easeInOut;"
-                   data-transform_out="y:bottom;s:300;s:300;"
-                   data-start="1400"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_22.png`" alt="" />
-              </div>
-
-              <div class="tp-caption tp-shape tp-shapewrapper bg-dark tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['375','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['135','0','0','0']"
-                   data-color="['rgba(0, 49, 100, 1.00)','rgba(0, 0, 0, 1.00)','rgba(0, 0, 0, 1.00)','rgba(0, 0, 0, 1.00)']"
-                   data-width="500"
-                   data-height="280"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:400;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="1600"
-                   data-responsive_offset="on"></div>
-
-              <div class="tp-caption slide-text-1 color-white tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['165','-110','-110','-110']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">GET CREATIVE NOW
-              </div>
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['204','-70','-70','-70']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_03.png`" alt="" />
-              </div>
-
-              <div class="tp-caption slide-text-2 color-white tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['216','-40','-40','-40']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">Builder Undoubtedly Builds
-              </div>
-
-              <div class="tp-caption slide-text-2 color-white tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['260','10','10','10']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">Your Stunning Website
-              </div>
-
-              <a class="tp-caption rev-btn tp-resizeme rev-btn-3"
-                 href="#" target="_self"
-                 data-x="['left','center','center','center']"
-                 data-hoffset="['410','-80','-80','-80']"
-                 data-y="['top','middle','middle','middle']"
-                 data-voffset="['338','80','80','80']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-                 data-transform_idle="o:1;"
-                 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-                 data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 45, 104, 1.00)"
-                 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-                 data-transform_out="opacity:0;s:300;s:300;"
-                 data-start="2000"
-                 data-splitin="none"
-                 data-splitout="none"
-                 data-actions=''
-                 data-responsive_offset="on">SEE ALL FEATURES </a>
-
-              <a class="tp-caption rev-btn  tp-resizeme rev-btn-4"
-                 href="/contact" target="_self"
-                 data-x="['left','center','center','center']"
-                 data-hoffset="['590','80','80','80']"
-                 data-y="['top','middle','middle','middle']"
-                 data-voffset="['338','80','80','80']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-                 data-transform_idle="o:1;"
-                 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-                 data-style_hover="c:rgba(0, 45, 104, 1.00);bg:rgba(255, 255, 255, 1.00);"
-                 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-                 data-transform_out="opacity:0;s:300;s:300;"
-                 data-start="2000"
-                 data-splitin="none"
-                 data-splitout="none"
-                 data-actions=''
-                 data-responsive_offset="on">BUY NOW! </a>
-            </li>
-
-            <li data-transition="random" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide">
-              <img :src="`${publicPath}images/banner/banner_1920x550.jpg`" alt=""
-                   data-bgposition="center top"
-                   data-kenburns="on"
-                   data-duration="9000"
-                   data-ease="Linear.easeNone"
-                   data-scalestart="100"
-                   data-scaleend="110"
-                   data-rotatestart="0"
-                   data-rotateend="0"
-                   data-offsetstart="0 0"
-                   data-offsetend="0 0"
-                   class="rev-slidebg" />
-              <!-- LAYERS -->
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['0','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['135','-130','-130','-128']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-visibility="['on','on','on','off']"
-                   data-transform_idle="o:1;"
-                   data-transform_in="x:right;s:250;e:Power3.easeInOut;"
-                   data-transform_out="x:left;s:300;s:300;"
-                   data-start="800"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_31.png`" alt="" />
-              </div>
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['0','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['414','150','150','128']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="x:left;s:250;e:Power3.easeInOut;"
-                   data-transform_out="x:right;s:300;s:300;"
-                   data-start="1000"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_31.png`" alt="" />
-              </div>
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','left']"
-                   data-hoffset="['375','-250','-250','135']"
-                   data-y="['top','middle','middle','top']"
-                   data-voffset="['0','0','0','0']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
-                   data-transform_out="y:top;s:300;s:300;"
-                   data-start="1200"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_32.png`" alt="" />
-              </div>
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','left']"
-                   data-hoffset="['875','250','250','635']"
-                   data-y="['top','middle','middle','top']"
-                   data-voffset="['0','0','0','0']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="y:top;s:250;e:Power3.easeInOut;"
-                   data-transform_out="y:bottom;s:300;s:300;"
-                   data-start="1400"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_32.png`" alt="" />
-              </div>
-
-              <div class="tp-caption tp-shape tp-shapewrapper bg-darker tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['375','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['135','0','0','0']"
-                   data-color="['rgba(10, 10, 10, 1.00)','rgba(0, 0, 0, 1.00)','rgba(0, 0, 0, 1.00)','rgba(0, 0, 0, 1.00)']"
-                   data-width="500"
-                   data-height="280"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:400;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="1600"
-                   data-responsive_offset="on"></div>
-
-              <div class="tp-caption slide-text-1 color-white tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['165','-110','-110','-110']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">WE TAKE CARE OF EVERYTHING
-              </div>
-
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['204','-70','-70','-70']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_03.png`" alt="" />
-              </div>
-
-              <div class="tp-caption slide-text-2 color-white tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['216','-40','-40','-40']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">The Best Construction
-              </div>
-
-              <div class="tp-caption slide-text-2 color-white tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['260','10','10','10']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">HTML Template
-              </div>
-
-              <a class="tp-caption rev-btn tp-resizeme rev-btn-5"
-                 href="#" target="_self"
-                 data-x="['left','center','center','center']"
-                 data-hoffset="['410','-80','-80','-80']"
-                 data-y="['top','middle','middle','middle']"
-                 data-voffset="['338','80','80','80']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-                 data-transform_idle="o:1;"
-                 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-                 data-style_hover="c:rgba(255, 255, 255, 1.00);bg:rgba(0, 0, 0, 1.00)"
-                 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-                 data-transform_out="opacity:0;s:300;s:300;"
-                 data-start="2000"
-                 data-splitin="none"
-                 data-splitout="none"
-                 data-actions=''
-                 data-responsive_offset="on">SEE ALL FEATURES </a>
-
-              <a class="tp-caption rev-btn  tp-resizeme rev-btn-4"
-                 href="/contact" target="_self"
-                 data-x="['left','center','center','center']"
-                 data-hoffset="['590','80','80','80']"
-                 data-y="['top','middle','middle','middle']"
-                 data-voffset="['338','80','80','80']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-                 data-transform_idle="o:1;"
-                 data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeInOut;"
-                 data-style_hover="c:rgba(0, 0, 0, 1.00);bg:rgba(255, 255, 255, 1.00);"
-                 data-transform_in="opacity:0;s:200;e:Power2.easeInOut;"
-                 data-transform_out="opacity:0;s:300;s:300;"
-                 data-start="2000"
-                 data-splitin="none"
-                 data-splitout="none"
-                 data-actions=''
-                 data-responsive_offset="on">BUY NOW! </a>
             </li>
           </ul>
           <div class="tp-bannertimer"></div>
@@ -1098,7 +657,7 @@
         </div>
       </div>
     </div>
-    <div class="section pt-5 pb-5">
+    <div class="section pt-5 pb-5" v-if="clientBanners.length">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -1115,93 +674,15 @@
               <div class="row">
                 <div class="slider-wrapper">
                   <ul class="client-list">
-                    <li class="col-md-2 col-sm-6">
+                    <li class="col-md-2 col-sm-6" v-for="item in clientBanners" :key="item.id">
                       <div class="client-media-cover-wrapper">
                         <div class="client-entry-media">
-                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
+                          <img :src="item.img" alt="" />
                         </div>
                         <div class="client-entry-cover">
                           <div class="client-overlay home-clients-container"></div>
                           <div class="home-clients-title">
-                            Client 01
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="col-md-2 col-sm-6">
-                      <div class="client-media-cover-wrapper">
-                        <div class="client-entry-media">
-                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
-                        </div>
-                        <div class="client-entry-cover">
-                          <div class="client-overlay home-clients-container"></div>
-                          <div class="home-clients-title">
-                            Client 02
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="col-md-2 col-sm-6">
-                      <div class="client-media-cover-wrapper">
-                        <div class="client-entry-media">
-                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
-                        </div>
-                        <div class="client-entry-cover">
-                          <div class="client-overlay home-clients-container"></div>
-                          <div class="home-clients-title">
-                            Client 03
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="col-md-2 col-sm-6">
-                      <div class="client-media-cover-wrapper">
-                        <div class="client-entry-media">
-                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
-                        </div>
-                        <div class="client-entry-cover">
-                          <div class="client-overlay home-clients-container"></div>
-                          <div class="home-clients-title">
-                            Client 04
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="col-md-2 col-sm-6">
-                      <div class="client-media-cover-wrapper">
-                        <div class="client-entry-media">
-                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
-                        </div>
-                        <div class="client-entry-cover">
-                          <div class="client-overlay home-clients-container"></div>
-                          <div class="home-clients-title">
-                            Client 05
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="col-md-2 col-sm-6">
-                      <div class="client-media-cover-wrapper">
-                        <div class="client-entry-media">
-                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
-                        </div>
-                        <div class="client-entry-cover">
-                          <div class="client-overlay home-clients-container"></div>
-                          <div class="home-clients-title">
-                            Client 06
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="col-md-2 col-sm-6">
-                      <div class="client-media-cover-wrapper">
-                        <div class="client-entry-media">
-                          <img :src="`${publicPath}images/client/client_163x86.jpg`" alt="" />
-                        </div>
-                        <div class="client-entry-cover">
-                          <div class="client-overlay home-clients-container"></div>
-                          <div class="home-clients-title">
-                            Client 07
+                            {{item.title}}
                           </div>
                         </div>
                       </div>
@@ -1233,6 +714,12 @@ export default {
   computed: {
     data () {
       return this.$store.state.home
+    },
+    homeBanners () {
+      return this.$store.state.banners.filter(o => o.type === 'home-banner')
+    },
+    clientBanners () {
+      return this.$store.state.banners.filter(o => o.type === 'client')
     }
   },
   mounted () {
@@ -1258,10 +745,19 @@ export default {
   destroyed () {
     document.getElementById('jquery.prettyPhoto.js').remove()
     document.getElementById('jquery.prettyPhoto.init.min.js').remove()
+  },
+  updated () {
+    if (this.homeBanners.length && $('#rev_slider_1').length > 0) {
+      RevSlider1_Init()
+    }
+    if (this.clientBanners.length && $('.client-list').length > 0) {
+      clientSliderInit()
+    }
   }
 }
 
 function RevSlider1_Init () {
+  console.log('init Home Banner Slider')
   $('#rev_slider_1').show().revolution({
     sliderType: 'standard',
     sliderLayout: 'auto',
@@ -1378,6 +874,7 @@ function projectSliderInit () {
 
 // Client Slider
 function clientSliderInit () {
+  console.log('init Client Slider')
   $('.client-list').owlCarousel({
     items: 6,
     itemsDesktop: [1199, 6],
