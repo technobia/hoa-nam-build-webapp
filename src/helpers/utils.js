@@ -11,4 +11,22 @@ export const injectScriptUrl = (url, tagId) => {
   }
 }
 
+export const checkReady = (selector, func) => {
+  return (function loop () {
+    if (Array.isArray(selector)) {
+      if (selector.some(i => !$(i)[0])) {
+        setTimeout(loop, 500)
+      } else {
+        func()
+      }
+    } else {
+      if (!$(selector)[0]) {
+        setTimeout(loop, 500)
+      } else {
+        func()
+      }
+    }
+  })()
+}
+
 export default {}

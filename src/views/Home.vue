@@ -699,7 +699,7 @@
 </template>
 
 <script>
-import { injectScriptUrl } from '@/helpers/utils'
+import { checkReady } from '@/helpers/utils'
 
 export default {
   name: 'Home',
@@ -723,41 +723,16 @@ export default {
     }
   },
   mounted () {
-    if ($('#rev_slider_1').length > 0) {
+    checkReady(['#rev_slider_1', '.service-list', '.project-list', '.client-list'], () => {
       RevSlider1_Init()
-    }
-
-    if ($('.service-list').length > 0) {
       ourServicesInit()
-    }
-
-    if ($('.project-list').length > 0) {
       projectSliderInit()
-    }
-
-    if ($('.client-list').length > 0) {
       clientSliderInit()
-    }
-
-    injectScriptUrl('js/jquery.prettyPhoto.js', 'jquery.prettyPhoto.js')
-    injectScriptUrl('js/jquery.prettyPhoto.init.min.js', 'jquery.prettyPhoto.init.min.js')
-  },
-  destroyed () {
-    document.getElementById('jquery.prettyPhoto.js').remove()
-    document.getElementById('jquery.prettyPhoto.init.min.js').remove()
-  },
-  updated () {
-    if (this.homeBanners.length && $('#rev_slider_1').length > 0) {
-      RevSlider1_Init()
-    }
-    if (this.clientBanners.length && $('.client-list').length > 0) {
-      clientSliderInit()
-    }
+    })
   }
 }
 
 function RevSlider1_Init () {
-  console.log('init Home Banner Slider')
   $('#rev_slider_1').show().revolution({
     sliderType: 'standard',
     sliderLayout: 'auto',
@@ -874,7 +849,6 @@ function projectSliderInit () {
 
 // Client Slider
 function clientSliderInit () {
-  console.log('init Client Slider')
   $('.client-list').owlCarousel({
     items: 6,
     itemsDesktop: [1199, 6],
