@@ -6,6 +6,9 @@
     <li :class="{ 'current-menu-item': getActiveLink('/about-us') }">
       <router-link to="/about-us">Giới thiệu</router-link>
     </li>
+    <li :class="{ 'current-menu-item': getActiveLink('/about-us') }">
+      <router-link to="/services">Dịch vụ</router-link>
+    </li>
     <li :class="{ 'current-menu-item': getActiveLink('/projects') }">
       <router-link to="/projects">Dự án</router-link>
     </li>

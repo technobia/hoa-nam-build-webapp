@@ -2,14 +2,14 @@
   <div class="site-content">
     <div class="big-title">
       <div class="container">
-        <h1 class="entry-title">Giới thiệu</h1>
+        <h1 class="entry-title">Dịch vụ</h1>
         <div class="breadcrumb">
           <div class="container">
             <ul class="tm_bread_crumb">
               <li class="top">
                 <router-link to="/">Trang chủ</router-link>
               </li>
-              <li class="sub tail current">Giới thiệu</li>
+              <li class="sub tail current">Dịch vụ</li>
             </ul>
           </div>
         </div>
@@ -20,28 +20,10 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="our_services_heading3 mb-2">
-              <div>{{data.about_us_heading}}</div>
+              <div>{{data.service_heading}}</div>
             </div>
-            <div class="mb-2">
-              <p v-html="data.about_us_part_1"></p>
-            </div>
-            <div class="mb-3">
-              <div class="single-project">
-                <div class="gallery tm-gallery mb-3">
-                  <div class="tm-nav">
-                    <span class="tm-next"><i class="fa fa-angle-right"></i></span>
-                    <span class="tm-prev"><i class="fa fa-angle-left"></i></span>
-                  </div>
-                  <div class="project-slider">
-                    <img width="870" height="370" src="images/services/service_750x320.jpg" alt="" />
-                    <img width="870" height="370" src="images/services/service_750x320.jpg" alt="" />
-                    <img width="870" height="370" src="images/services/service_750x320.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mb-5">
-              <p v-html="data.about_us_part_2"></p>
+            <div class="service-body mb-2">
+              <p v-html="data.service_body"></p>
             </div>
           </div>
         </div>
@@ -52,9 +34,9 @@
 
 <script>
 export default {
-  name: 'AboutUs',
+  name: 'Services',
   metaInfo: {
-    title: 'Xây Dựng Hoà Nam - Giới thiệu'
+    title: 'Xây Dựng Hoà Nam - Dịch vụ'
   },
   computed: {
     data () {
@@ -92,3 +74,9 @@ function projectSliderInit () {
   })
 }
 </script>
+
+<style scoped>
+.service-body {
+  color: #333333;
+}
+</style>

@@ -18,6 +18,11 @@ export default new Router({
       component: () => import('./views/AboutUs')
     },
     {
+      path: '/services',
+      name: 'Servicess',
+      component: () => import('./views/Services')
+    },
+    {
       path: '/projects',
       name: 'Projects',
       component: () => import('./views/Projects')
