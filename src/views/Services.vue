@@ -36,7 +36,7 @@
 export default {
   name: 'Services',
   metaInfo: {
-    title: 'Xây Dựng Hoà Nam - Dịch vụ'
+    title: 'Xây Dựng Hoa Nam - Dịch vụ'
   },
   computed: {
     data () {

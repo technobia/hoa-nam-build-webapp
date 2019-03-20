@@ -221,7 +221,7 @@ import { checkReady } from '@/helpers/utils'
 
 export default {
   name: 'Projects',
-  metaInfo: { title: 'Xây Dựng Hoà Nam - Dự án' },
+  metaInfo: { title: 'Xây Dựng Hoa Nam - Dự án' },
   mounted () {
     checkReady('#da-thumbs', projectsInit)
   }

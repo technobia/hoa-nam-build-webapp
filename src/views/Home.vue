@@ -704,7 +704,7 @@ import { checkReady } from '@/helpers/utils'
 export default {
   name: 'Home',
   metaInfo: {
-    title: 'Xây Dựng Hoà Nam - Trang chủ'
+    title: 'Xây Dựng Hoa Nam - Trang chủ'
   },
   data () {
     return {
