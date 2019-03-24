@@ -25,7 +25,7 @@
             <div class="mb-2">
               <p v-html="data.about_us_part_1"></p>
             </div>
-            <div class="mb-3">
+            <div class="mb-3" v-if="homeBanners.length">
               <div class="single-project">
                 <div class="gallery tm-gallery mb-3">
                   <div class="tm-nav">
@@ -33,9 +33,7 @@
                     <span class="tm-prev"><i class="fa fa-angle-left"></i></span>
                   </div>
                   <div class="project-slider">
-                    <img width="870" height="370" src="images/services/service_750x320.jpg" alt="" />
-                    <img width="870" height="370" src="images/services/service_750x320.jpg" alt="" />
-                    <img width="870" height="370" src="images/services/service_750x320.jpg" alt="" />
+                    <img width="870" height="370" :src="item.img" alt="" v-for="item in homeBanners" :key="item.id" />
                   </div>
                 </div>
               </div>
@@ -51,6 +49,8 @@
 </template>
 
 <script>
+import { checkReady } from '@/helpers/utils'
+
 export default {
   name: 'AboutUs',
   metaInfo: {
@@ -59,12 +59,13 @@ export default {
   computed: {
     data () {
       return this.$store.state.home
+    },
+    homeBanners () {
+      return this.$store.state.banners.filter(o => o.type === 'about_us')
     }
   },
   mounted () {
-    if ($('.project-slider').length > 0) {
-      projectSliderInit()
-    }
+    checkReady(['.project-slider'], projectSliderInit)
   }
 }
 

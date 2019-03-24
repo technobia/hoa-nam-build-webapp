@@ -38,6 +38,7 @@ export default {
     preLoading()
     this.$store.dispatch('getHome')
     this.$store.dispatch('getBanner')
+    this.$store.dispatch('getProject')
   }
 }
 

@@ -21,185 +21,52 @@
               <div class="mb-6">
                 <div class="filter-wrapper">
                   <a href="#" class="filterbutton selected" data-filter="*">
-                    All
+                    Tất cả
                   </a>
-                  <a href="#" class="filterbutton" data-filter=".filter-3d-design">
-                    3D Design
+                  <a href="#" class="filterbutton" data-filter=".filter-pending">
+                    Đang xây dựng
                   </a>
-                  <a href="#" class="filterbutton" data-filter=".filter-building">
-                    Building
-                  </a>
-                  <a href="#" class="filterbutton" data-filter=".filter-art">
-                    Art
-                  </a>
-                  <a href="#" class="filterbutton" data-filter=".filter-exterior">
-                    Exterior
-                  </a>
-                  <a href="#" class="filterbutton" data-filter=".filter-interior">
-                    Interior
+                  <a href="#" class="filterbutton" data-filter=".filter-success">
+                    Đã hoàn thành
                   </a>
                 </div>
               </div>
               <div class="portfolio-row">
-                <div class="portfolioContainer portfolioContainer-full row" id="da-thumbs">
+                <div class="portfolioContainer portfolioContainer-full row" id="da-thumbs" v-if="projects.length">
                   <ul class="project-masonry">
-                    <li class="grid-item filter-building our-projects-wrapper col-md-4 col-sm-6 mb-3">
+                    <li class="grid-item our-projects-wrapper col-md-4 col-sm-6 mb-3"
+                        :class="{
+                          'filter-pending': item.type === 'pencing',
+                          'filter-success': item.type === 'success'
+                        }"
+                        v-for="item in projects"
+                        :key="item.id"
+                    >
                       <div class="project-media-cover-wrapper">
                         <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_360x240.jpg" alt="" />
+                          <img :src="item.img" alt="" />
                         </div>
                         <div class="project-entry-cover">
                           <div class="project-overlay our-projects-container"></div>
                           <div class="project-content">
                             <div class="our-projects-categories">
-                              <a href="#">Building</a>
+                              {{item.type === 'pending' ? 'Đang xây dựng' : 'Đã hoàn thành'}}
                             </div>
                             <div class="line-clear"></div>
                             <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in London
+                              <a href="javascript:void(0);">
+                                {{item.name}}
                               </a>
                             </div>
                             <div class="line-clear"></div>
                             <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
+                              <a :data-rel="`prettyPhoto[${item.id}]`" :href="item.img">
                                 <i class="fa fa-search"></i>
                               </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="grid-item filter-3d-design our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_360x240.jpg" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">3D Design</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in Singapore
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="grid-item filter-exterior our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_360x240.jpg" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">Exterior</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in Paris
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="grid-item filter-interior our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_360x240.jpg" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">Interior</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in Spain
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="grid-item filter-art our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_360x240.jpg" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">Art</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in Singapore
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="grid-item filter-3d-design our-projects-wrapper col-md-4 col-sm-6 mb-3">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img src="images/portfolio/portfolio_360x240.jpg" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">3D Design</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in London
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" href="images/portfolio/portfolio_770x515.jpg">
-                                <i class="fa fa-search"></i>
-                              </a>
+                              <a :href="img"
+                                 :key="index"
+                                 v-for="(img, index) in item.images"
+                                 :data-rel="`prettyPhoto[${item.id}]`"></a>
                             </div>
                           </div>
                         </div>
@@ -217,13 +84,22 @@
 </template>
 
 <script>
-import { checkReady } from '@/helpers/utils'
+import { checkReady, injectScriptUrl } from '@/helpers/utils'
 
 export default {
   name: 'Projects',
   metaInfo: { title: 'Xây Dựng Hoa Nam - Dự án' },
+  computed: {
+    projects () {
+      return this.$store.state.projects
+    }
+  },
   mounted () {
-    checkReady('#da-thumbs', projectsInit)
+    checkReady(['#da-thumbs'], () => {
+      projectsInit()
+      injectScriptUrl('/js/jquery.prettyPhoto.js', 'jquery.prettyPhoto.js')
+      injectScriptUrl('/js/jquery.prettyPhoto.init.min.js', 'jquery.prettyPhoto.init.min.js')
+    })
   }
 }
 

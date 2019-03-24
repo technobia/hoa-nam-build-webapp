@@ -8,7 +8,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     home: {},
-    banners: []
+    banners: [],
+    projects: []
   },
   mutations: {
     setHome (state, home) {
@@ -16,6 +17,9 @@ export default new Vuex.Store({
     },
     setBanners (state, banners) {
       state.banners = banners
+    },
+    setProjects (state, projects) {
+      state.projects = projects
     }
   },
   actions: {
@@ -31,6 +35,14 @@ export default new Vuex.Store({
           const collections = []
           resp.forEach(doc => collections.push(doc.data()))
           commit('setBanners', collections)
+        })
+    },
+    getProject ({ commit }) {
+      getCollections('projects')
+        .then(resp => {
+          const collections = []
+          resp.forEach(doc => collections.push(doc.data()))
+          commit('setProjects', collections)
         })
     }
   }
