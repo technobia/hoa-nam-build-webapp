@@ -19,7 +19,7 @@
           <div class="col-sm-8">
             <div class="mb-2">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.4604411113!2d106.41504048145225!3d10.754666404816403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo+Chi+Minh+City%2C+Vietnam!5e0!3m2!1sen!2s!4v1551410581606"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15676.789762638587!2d106.78326461936439!3d10.796184926324951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4e98f71f146fdad!2sMega+Ruby+Residence!5e0!3m2!1sen!2s!4v1553413405696"
                 id="map-canvas"
                 height="370"
                 width="100%"
