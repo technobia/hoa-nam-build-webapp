@@ -32,132 +32,132 @@
                    class="rev-slidebg" />
               <!-- LAYERS -->
 
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['0','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['135','-130','-130','-128']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-visibility="['on','on','on','off']"
-                   data-transform_idle="o:1;"
-                   data-transform_in="x:right;s:250;e:Power3.easeInOut;"
-                   data-transform_out="x:left;s:300;s:300;"
-                   data-start="800"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_01.png`" alt="" />
-              </div>
+              <!--<div class="tp-caption tp-resizeme"-->
+                   <!--data-x="['left','center','center','center']"-->
+                   <!--data-hoffset="['0','0','0','0']"-->
+                   <!--data-y="['top','middle','middle','middle']"-->
+                   <!--data-voffset="['135','-130','-130','-128']"-->
+                   <!--data-width="none"-->
+                   <!--data-height="none"-->
+                   <!--data-whitespace="nowrap"-->
+                   <!--data-visibility="['on','on','on','off']"-->
+                   <!--data-transform_idle="o:1;"-->
+                   <!--data-transform_in="x:right;s:250;e:Power3.easeInOut;"-->
+                   <!--data-transform_out="x:left;s:300;s:300;"-->
+                   <!--data-start="800"-->
+                   <!--data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_01.png`" alt="" />-->
+              <!--</div>-->
 
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['-1','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['419','150','150','128']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-visibility="['on','on','on','off']"
-                   data-transform_idle="o:1;"
-                   data-transform_in="x:left;s:250;e:Power3.easeInOut;"
-                   data-transform_out="x:right;s:300;s:300;"
-                   data-start="1000"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_01.png`" alt="" />
-              </div>
+              <!--<div class="tp-caption tp-resizeme"-->
+                   <!--data-x="['left','center','center','center']"-->
+                   <!--data-hoffset="['-1','0','0','0']"-->
+                   <!--data-y="['top','middle','middle','middle']"-->
+                   <!--data-voffset="['419','150','150','128']"-->
+                   <!--data-width="none"-->
+                   <!--data-height="none"-->
+                   <!--data-whitespace="nowrap"-->
+                   <!--data-visibility="['on','on','on','off']"-->
+                   <!--data-transform_idle="o:1;"-->
+                   <!--data-transform_in="x:left;s:250;e:Power3.easeInOut;"-->
+                   <!--data-transform_out="x:right;s:300;s:300;"-->
+                   <!--data-start="1000"-->
+                   <!--data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_01.png`" alt="" />-->
+              <!--</div>-->
 
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','left']"
-                   data-hoffset="['375','-250','-250','135']"
-                   data-y="['top','middle','middle','top']"
-                   data-voffset="['0','0','0','0']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-visibility="['on','on','on','off']"
-                   data-transform_idle="o:1;"
-                   data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"
-                   data-transform_out="y:top;s:300;s:300;"
-                   data-start="1200"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_02.png`" alt="" />
-              </div>
+              <!--<div class="tp-caption tp-resizeme"-->
+                   <!--data-x="['left','center','center','left']"-->
+                   <!--data-hoffset="['375','-250','-250','135']"-->
+                   <!--data-y="['top','middle','middle','top']"-->
+                   <!--data-voffset="['0','0','0','0']"-->
+                   <!--data-width="none"-->
+                   <!--data-height="none"-->
+                   <!--data-whitespace="nowrap"-->
+                   <!--data-visibility="['on','on','on','off']"-->
+                   <!--data-transform_idle="o:1;"-->
+                   <!--data-transform_in="y:bottom;s:250;e:Power3.easeInOut;"-->
+                   <!--data-transform_out="y:top;s:300;s:300;"-->
+                   <!--data-start="1200"-->
+                   <!--data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_02.png`" alt="" />-->
+              <!--</div>-->
 
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','left']"
-                   data-hoffset="['890','250','250','635']"
-                   data-y="['top','middle','middle','top']"
-                   data-voffset="['0','0','0','0']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-visibility="['on','on','on','off']"
-                   data-transform_idle="o:1;"
-                   data-transform_in="y:top;s:250;e:Power3.easeInOut;"
-                   data-transform_out="y:bottom;s:300;s:300;"
-                   data-start="1400"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_02.png`" alt="" />
-              </div>
+              <!--<div class="tp-caption tp-resizeme"-->
+                   <!--data-x="['left','center','center','left']"-->
+                   <!--data-hoffset="['890','250','250','635']"-->
+                   <!--data-y="['top','middle','middle','top']"-->
+                   <!--data-voffset="['0','0','0','0']"-->
+                   <!--data-width="none"-->
+                   <!--data-height="none"-->
+                   <!--data-whitespace="nowrap"-->
+                   <!--data-visibility="['on','on','on','off']"-->
+                   <!--data-transform_idle="o:1;"-->
+                   <!--data-transform_in="y:top;s:250;e:Power3.easeInOut;"-->
+                   <!--data-transform_out="y:bottom;s:300;s:300;"-->
+                   <!--data-start="1400"-->
+                   <!--data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_02.png`" alt="" />-->
+              <!--</div>-->
 
-              <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['375','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['135','0','0','0']"
-                   data-width="['515','500','500','500']"
-                   data-height="['285','280','280','280']"
-                   data-whitespace="['normal','nowrap','nowrap','nowrap']"
-                   data-transform_idle="o:1;"
-                   data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:400;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="1600"
-                   data-responsive_offset="on"></div>
+              <!--<div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"-->
+                   <!--data-x="['left','center','center','center']"-->
+                   <!--data-hoffset="['375','0','0','0']"-->
+                   <!--data-y="['top','middle','middle','middle']"-->
+                   <!--data-voffset="['135','0','0','0']"-->
+                   <!--data-width="['515','500','500','500']"-->
+                   <!--data-height="['285','280','280','280']"-->
+                   <!--data-whitespace="['normal','nowrap','nowrap','nowrap']"-->
+                   <!--data-transform_idle="o:1;"-->
+                   <!--data-transform_in="z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;s:400;e:Power3.easeInOut;"-->
+                   <!--data-transform_out="opacity:0;s:300;s:300;"-->
+                   <!--data-start="1600"-->
+                   <!--data-responsive_offset="on"></div>-->
 
-              <div class="tp-caption slide-text-1 tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['165','-110','-110','-110']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">{{item.heading}}
-              </div>
+              <!--<div class="tp-caption slide-text-1 tp-resizeme"-->
+                   <!--data-x="['left','center','center','center']"-->
+                   <!--data-hoffset="['410','0','0','0']"-->
+                   <!--data-y="['top','middle','middle','middle']"-->
+                   <!--data-voffset="['165','-110','-110','-110']"-->
+                   <!--data-width="none"-->
+                   <!--data-height="none"-->
+                   <!--data-whitespace="nowrap"-->
+                   <!--data-transform_idle="o:1;"-->
+                   <!--data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"-->
+                   <!--data-transform_out="opacity:0;s:300;s:300;"-->
+                   <!--data-start="2000"-->
+                   <!--data-splitin="none"-->
+                   <!--data-splitout="none"-->
+                   <!--data-responsive_offset="on">{{item.heading}}-->
+              <!--</div>-->
 
-              <div class="tp-caption tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['203','-70','-70','-70']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_03.png`" alt="" />
-              </div>
+              <!--<div class="tp-caption tp-resizeme"-->
+                   <!--data-x="['left','center','center','center']"-->
+                   <!--data-hoffset="['410','0','0','0']"-->
+                   <!--data-y="['top','middle','middle','middle']"-->
+                   <!--data-voffset="['203','-70','-70','-70']"-->
+                   <!--data-width="none"-->
+                   <!--data-height="none"-->
+                   <!--data-whitespace="nowrap"-->
+                   <!--data-transform_idle="o:1;"-->
+                   <!--data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"-->
+                   <!--data-transform_out="opacity:0;s:300;s:300;"-->
+                   <!--data-start="2000"-->
+                   <!--data-responsive_offset="on"><img :src="`${publicPath}images/banner/line_03.png`" alt="" />-->
+              <!--</div>-->
 
-              <div class="tp-caption slide-text-2 tp-resizeme"
-                   data-x="['left','center','center','center']"
-                   data-hoffset="['410','0','0','0']"
-                   data-y="['top','middle','middle','middle']"
-                   data-voffset="['216','-40','-40','-40']"
-                   data-width="none"
-                   data-height="none"
-                   data-whitespace="nowrap"
-                   data-transform_idle="o:1;"
-                   data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"
-                   data-transform_out="opacity:0;s:300;s:300;"
-                   data-start="2000"
-                   data-splitin="none"
-                   data-splitout="none"
-                   data-responsive_offset="on">{{item.title}}
-              </div>
+              <!--<div class="tp-caption slide-text-2 tp-resizeme"-->
+                   <!--data-x="['left','center','center','center']"-->
+                   <!--data-hoffset="['410','0','0','0']"-->
+                   <!--data-y="['top','middle','middle','middle']"-->
+                   <!--data-voffset="['216','-40','-40','-40']"-->
+                   <!--data-width="none"-->
+                   <!--data-height="none"-->
+                   <!--data-whitespace="normal"-->
+                   <!--data-transform_idle="o:1;"-->
+                   <!--data-transform_in="opacity:0;s:200;e:Power3.easeInOut;"-->
+                   <!--data-transform_out="opacity:0;s:300;s:300;"-->
+                   <!--data-start="2000"-->
+                   <!--data-splitin="none"-->
+                   <!--data-splitout="none"-->
+                   <!--data-responsive_offset="on">{{item.title}}-->
+              <!--</div>-->
             </li>
           </ul>
           <div class="tp-bannertimer"></div>
@@ -872,3 +872,10 @@ function clientSliderInit () {
   })
 }
 </script>
+
+<style>
+.tp-caption.slide-text-2 {
+  line-height: 1;
+  font-size: 12px;
+}
+</style>
