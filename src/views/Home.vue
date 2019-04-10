@@ -182,7 +182,7 @@
         </div>
       </div>
     </div>
-    <div class="section pt-5 pb-3">
+    <div class="section pt-5 pb-3" v-if="successProject.length > 0">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
@@ -205,213 +205,16 @@
             <div class="myportfolio-container minimal-light row">
               <div class="slider-wrapper">
                 <ul class="service-list">
-                  <li class="col-md-6 col-sm-6">
+                  <li class="col-md-6 col-sm-6" v-for="item in successProject" :key="item.id">
                     <div class="service-item">
                       <div class="service-entry-media">
-                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
-                        <div class="service-entry-cover">
-                          <div class="service-overlay our-services-container"></div>
-                          <div class="our-services-readmore">
-                            <a class="our-services-readmore-link" href="service-detail.html">
-                              READ MORE
-                            </a>
-                          </div>
-                          <div class="our-services-url">
-                            <a class="our-services-url-link" href="service-detail.html">
-                              <i class="fa fa-external-link"></i>
-                            </a>
-                          </div>
-                        </div>
+                        <img :src="item.img" alt="" />
                       </div>
                       <div class="our-services-content">
                         <div class="our-services-title">
-                          <a class="our-services-title-link" href="service-detail.html">
-                            Building Renovation
-                          </a>
+                          <span class="our-services-title-link">{{item.name}}</span>
                         </div>
-                        <div class="our-services-desc">
-                          Depending on the scope of your project, we design your renovation in-house or partner with Builder ‘s finest architects to design, budget and build.
-                        </div>
-                        <div class="our-services-readmore-2">
-                          <a class="our-services-readmore-link-2" href="service-detail.html">
-                            READ MORE
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                      <div class="service-entry-media">
-                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
-                        <div class="service-entry-cover">
-                          <div class="service-overlay our-services-container"></div>
-                          <div class="our-services-readmore">
-                            <a class="our-services-readmore-link" href="service-detail.html">
-                              READ MORE
-                            </a>
-                          </div>
-                          <div class="our-services-url">
-                            <a class="our-services-url-link" href="service-detail.html">
-                              <i class="fa fa-external-link"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="our-services-content">
-                        <div class="our-services-title">
-                          <a class="our-services-title-link" href="service-detail.html">
-                            Design &amp; Build Package
-                          </a>
-                        </div>
-                        <div class="our-services-desc">
-                          Integrity for what we build, the purpose of why we build. We build a house with the synchronism between design and build package.
-                        </div>
-                        <div class="our-services-readmore-2">
-                          <a class="our-services-readmore-link-2" href="service-detail.html">
-                            READ MORE
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                      <div class="service-entry-media">
-                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
-                        <div class="service-entry-cover">
-                          <div class="service-overlay our-services-container"></div>
-                          <div class="our-services-readmore">
-                            <a class="our-services-readmore-link" href="service-detail.html">
-                              READ MORE
-                            </a>
-                          </div>
-                          <div class="our-services-url">
-                            <a class="our-services-url-link" href="service-detail.html">
-                              <i class="fa fa-external-link"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="our-services-content">
-                        <div class="our-services-title">
-                          <a class="our-services-title-link" href="service-detail.html">
-                            Preconstruction
-                          </a>
-                        </div>
-                        <div class="our-services-desc">
-                          To ensure that the homebuilding process goes smoothly, it's important that both the homebuilder and buyer understand each other's expectations.
-                        </div>
-                        <div class="our-services-readmore-2">
-                          <a class="our-services-readmore-link-2" href="service-detail.html">
-                            READ MORE
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                      <div class="service-entry-media">
-                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
-                        <div class="service-entry-cover">
-                          <div class="service-overlay our-services-container"></div>
-                          <div class="our-services-readmore">
-                            <a class="our-services-readmore-link" href="service-detail.html">
-                              READ MORE
-                            </a>
-                          </div>
-                          <div class="our-services-url">
-                            <a class="our-services-url-link" href="service-detail.html">
-                              <i class="fa fa-external-link"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="our-services-content">
-                        <div class="our-services-title">
-                          <a class="our-services-title-link" href="service-detail.html">
-                            Build Services
-                          </a>
-                        </div>
-                        <div class="our-services-desc">
-                          Builder's 15 years in design-build with quality contractors has built our best practice solutions to ensure successful project delivery.
-                        </div>
-                        <div class="our-services-readmore-2">
-                          <a class="our-services-readmore-link-2" href="service-detail.html">
-                            READ MORE
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                      <div class="service-entry-media">
-                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
-                        <div class="service-entry-cover">
-                          <div class="service-overlay our-services-container"></div>
-                          <div class="our-services-readmore">
-                            <a class="our-services-readmore-link" href="service-detail.html">
-                              READ MORE
-                            </a>
-                          </div>
-                          <div class="our-services-url">
-                            <a class="our-services-url-link" href="service-detail.html">
-                              <i class="fa fa-external-link"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="our-services-content">
-                        <div class="our-services-title">
-                          <a class="our-services-title-link" href="service-detail.html">
-                            House Smart
-                          </a>
-                        </div>
-                        <div class="our-services-desc">
-                          How smart is your house? All houses are not designed or built the same. What happens behind the walls, below the floors.
-                        </div>
-                        <div class="our-services-readmore-2">
-                          <a class="our-services-readmore-link-2" href="service-detail.html">
-                            READ MORE
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="col-md-6 col-sm-6">
-                    <div class="service-item">
-                      <div class="service-entry-media">
-                        <img :src="`${publicPath}images/services/service_360x195.jpg`" alt="" />
-                        <div class="service-entry-cover">
-                          <div class="service-overlay our-services-container"></div>
-                          <div class="our-services-readmore">
-                            <a class="our-services-readmore-link" href="service-detail.html">
-                              READ MORE
-                            </a>
-                          </div>
-                          <div class="our-services-url">
-                            <a class="our-services-url-link" href="service-detail.html">
-                              <i class="fa fa-external-link"></i>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="our-services-content">
-                        <div class="our-services-title">
-                          <a class="our-services-title-link" href="service-detail.html">
-                            Domestic Builders
-                          </a>
-                        </div>
-                        <div class="our-services-desc">
-                          Whilst many people flout the above laws – and have done for many years, consumers are becoming much more aware of the requirement to engage.
-                        </div>
-                        <div class="our-services-readmore-2">
-                          <a class="our-services-readmore-link-2" href="service-detail.html">
-                            READ MORE
-                          </a>
-                        </div>
+                        <div class="our-services-desc" v-html="item.description"></div>
                       </div>
                     </div>
                   </li>
@@ -422,7 +225,7 @@
         </div>
       </div>
     </div>
-    <div class="section home-latest-projects">
+    <div class="section home-latest-projects" v-if="pendingProject.length > 0">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
@@ -439,164 +242,19 @@
               <div class="slider-wrapper">
                 <div class="row">
                   <ul class="project-list">
-                    <li class="our-projects-wrapper col-md-4 col-sm-6">
+                    <li class="our-projects-wrapper col-md-4 col-sm-6" v-for="item in pendingProject" :key="item.id">
                       <div class="project-media-cover-wrapper">
                         <div class="project-entry-media">
-                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
+                          <img :src="item.img" alt="" />
                         </div>
                         <div class="project-entry-cover">
                           <div class="project-overlay our-projects-container"></div>
                           <div class="project-content">
                             <div class="our-projects-categories">
-                              <a href="#">Building</a>
+                              {{item.type === 'pending' ? 'Đang xây dựng' : 'Đã hoàn thành'}}
                             </div>
                             <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in London
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="our-projects-wrapper col-md-4 col-sm-6">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">3D Design</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in Singapore
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="our-projects-wrapper col-md-4 col-sm-6">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">Exterior</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in Paris
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="our-projects-wrapper col-md-4 col-sm-6">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">Interior</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in Spain
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="our-projects-wrapper col-md-4 col-sm-6">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">Art</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in Singapore
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="our-projects-wrapper col-md-4 col-sm-6">
-                      <div class="project-media-cover-wrapper">
-                        <div class="project-entry-media">
-                          <img :src="`${publicPath}images/portfolio/portfolio_263x280.jpg`" alt="" />
-                        </div>
-                        <div class="project-entry-cover">
-                          <div class="project-overlay our-projects-container"></div>
-                          <div class="project-content">
-                            <div class="our-projects-categories">
-                              <a href="#">3D Design</a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-title">
-                              <a href="portfolio-detail.html">
-                                White House in London
-                              </a>
-                            </div>
-                            <div class="line-clear"></div>
-                            <div class="our-projects-popup">
-                              <a data-rel="prettyPhoto" :href="`${publicPath}images/portfolio/portfolio_770x515.jpg`">
-                                <i class="fa fa-search"></i>
-                              </a>
-                            </div>
+                            <div class="our-projects-title">{{item.name}}</div>
                           </div>
                         </div>
                       </div>
@@ -720,6 +378,12 @@ export default {
     },
     clientBanners () {
       return this.$store.state.banners.filter(o => o.type === 'client')
+    },
+    pendingProject () {
+      return this.$store.state.projects.filter(o => o.type === 'pending')
+    },
+    successProject () {
+      return this.$store.state.projects.filter(o => o.type === 'success')
     }
   },
   mounted () {
