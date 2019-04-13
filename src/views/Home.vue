@@ -386,13 +386,26 @@ export default {
       return this.$store.state.projects.filter(o => o.type === 'success')
     }
   },
+  methods: {
+    checkReady () {
+      const checkList = []
+      if (this.homeBanners.length > 0) checkList.push('#rev_slider_1')
+      if (this.pendingProject.length > 0) checkList.push('.project-list')
+      if (this.successProject.length > 0) checkList.push('.service-list')
+      if (this.clientBanners.length > 0) checkList.push('.client-list')
+      checkReady(checkList, () => {
+        RevSlider1_Init()
+        ourServicesInit()
+        projectSliderInit()
+        clientSliderInit()
+      })
+    }
+  },
+  updated () {
+    this.checkReady()
+  },
   mounted () {
-    checkReady(['#rev_slider_1', '.service-list', '.project-list', '.client-list'], () => {
-      RevSlider1_Init()
-      ourServicesInit()
-      projectSliderInit()
-      clientSliderInit()
-    })
+    this.checkReady()
   }
 }
 
