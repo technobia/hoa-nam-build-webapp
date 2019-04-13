@@ -281,7 +281,7 @@
             <div class="mb-3">
               <div class="section-title">{{data.about_us_title}}</div>
               <div class="section-desc">
-                <p>{{data.about_us_readmore_info}}</p>
+                <p>{{data.about_us_info}}</p>
               </div>
               <div class="home_whatweare_btn">
                 <router-link to="/about-us">{{data.about_us_readmore_button}}</router-link>
@@ -296,7 +296,7 @@
                   <div>
                     <h4>TỨ VẤN</h4>
                     <h5>MIỄN PHÍ</h5>
-                    <a href="#">BẤM VÀO ĐÂY! </a>
+                    <a :href="`mailto:${data.contact_us_email}`">BẤM VÀO ĐÂY! </a>
                   </div>
                 </div>
               </div>

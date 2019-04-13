@@ -12,7 +12,7 @@
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="widget">
-            <h3 class="widget-title"><span>Thông tin liên hệ</span></h3>
+            <h3 class="widget-title"><span>Danh mục website</span></h3>
             <ul class="menu">
               <li><router-link to="/about-us">Giới thiệu</router-link></li>
               <li><router-link to="/services">Dịch vụ</router-link></li>
@@ -23,7 +23,7 @@
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="widget office-block">
-            <h3 class="widget-title"><span>Văn phòng</span></h3>
+            <h3 class="widget-title"><span>Địa chỉ liên hệ</span></h3>
             <div class="textwidget">
               <p><i class="fa fa-map-marker"></i>{{data.contact_us_address}}</p>
               <p><i class="fa fa-phone"></i>{{data.contact_us_phone}}</p>
