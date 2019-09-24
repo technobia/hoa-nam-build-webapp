@@ -294,7 +294,7 @@
                 <img :src="`${publicPath}images/image_360x146.jpg`" alt="" width="370" height="150" />
                 <div class="info">
                   <div>
-                    <h4>TỨ VẤN</h4>
+                    <h4>TƯ VẤN</h4>
                     <h5>MIỄN PHÍ</h5>
                     <a :href="`mailto:${data.contact_us_email}`">BẤM VÀO ĐÂY! </a>
                   </div>
